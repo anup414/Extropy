@@ -1,0 +1,887 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+body {
+    font-family: Montserrat, Helvetica, Arial, serif;
+    color: #fff;
+    text-transform: uppercase;
+    height: 15000px;
+    background: #294852;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: .05em;
+    -webkit-font-smoothing: antialiased
+}
+h3 {
+    font-weight: 400;
+    line-height: 32px;
+    z-index: 20
+}
+h3.sorry {
+    width: 600px;
+    text-align: center;
+    margin: 200px auto;
+    line-height: 40px
+}
+h4 {
+    font-weight: 400;
+    line-height: 30px;
+    font-size: 18px;
+    width: 550px;
+    top: 200px;
+    z-index: 20
+}
+.level h4 span i,
+.level h3 span i {
+    position: relative;
+    font-style: normal;
+    border-radius: 15px;
+    margin: -2px -2px;
+    padding: 2px 4px 2px 6px
+}
+h4.right {
+    width: 550px;
+    right: 40px;
+    text-align: right
+}
+h4.right span {
+    width: 550px;
+    right: 0
+}
+h4.right1 {
+    width: 580px;
+    right: 0px;
+    text-align: right
+}
+h4.right1 span {
+    width: 533px;
+    right: 0
+}
+h4.left {
+    width: 550px;
+    left: 60px;
+    text-align: left
+}
+h4.left span {
+    width: 550px;
+    left: 0
+}
+h4.full,
+h3.full {
+    width: 860px;
+    text-align: center;
+    left: 50px
+}
+h4.full span,
+h3.full span {
+    width: 860px;
+    text-align: center;
+    left: 0;
+    right: 0
+}
+h4.small-left {
+    font-size: 16px;
+    width: 350px;
+    left: 40px;
+    text-align: left
+}
+.scrollblock {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    left: 0
+}
+.wrapper {
+    width: 960px;
+    height: 700px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -480px
+}
+.level {
+    height: 700px;
+    overflow: hidden;
+    position: relative
+}
+.level * {
+    position: absolute;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-ounbox
+}
+.level .bgouter {
+    height: 730px;
+    width: 1360px;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    margin-left: -680px;
+    z-index: -10;
+    overflow: hidden
+}
+.level .bgcontainer {
+    height: 730px;
+    width: 1360px;
+    float: left;
+    position: relative
+}
+.bgouter .bg {
+    width: 1360px;
+    left: 0
+}
+#reality .bg {
+    background: url(bgs.png) 0 -1200px no-repeat;
+    width: 215px;
+    height: 210px;
+    top: 340px
+}
+#level1 .bg {
+    background: url(bgs.png) -220px -1200px no-repeat;
+    width: 385px;
+    height: 145px;
+    top: 250px
+}
+#level2 .bg {
+    background: url(bgs.png) 0 -1450px repeat-x;
+    width: 4000px;
+    height: 300px;
+    top: 200px
+}
+#name1{
+    opacity: 0;
+}
+#level3 .bg1 {
+    background: url(bgs.png) 0 0 no-repeat;
+    height: 400px;
+    top: 350px
+}
+#level3 .bg2 {
+    background: url(bgs.png) 0 -400px no-repeat;
+    height: 400px;
+    top: 350px
+}
+#level3 .bg3 {
+    background: url(bgs.png) 0 -800px no-repeat;
+    height: 400px;
+    top: 350px
+}
+#limbo .bg1 {
+    background: url(bgs.png) 0 -1800px no-repeat;
+    height: 400px;
+    top: 350px
+}
+#limbo .bg2 {
+    background: url(bgs.png) 0 -2200px no-repeat;
+    height: 400px;
+    top: 350px
+}
+#limbo .bg3 {
+    background: url(bgs.png) 0 -2600px no-repeat;
+    height: 400px;
+    top: 350px
+}
+.level .shadow {
+    height: 800px;
+    width: 1360px;
+    box-shadow: inset 0 0 60px 60px rgba(41, 72, 82, 1);
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    margin-left: -680px;
+    z-index: 10
+}
+.level .bgadjuster {
+    height: 30px;
+    width: 100%;
+    float: left;
+    position: relative
+}
+.adjuster {
+    height: 700px;
+    width: 100%
+}
+.adjuster1 {
+    margin-top: -3500px
+}
+.clock-hand {
+    width: 40px;
+    height: 40px;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -webkit-animation-name: rotate;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: rotate;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear
+}
+.clock-hand:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 14px;
+    background: #f0fcff;
+    top: 19px;
+    right: 8px
+}
+@-webkit-keyframes rotate {
+    from {
+        -webkit-transform: rotate(0deg)
+    }
+    to {
+        -webkit-transform: rotate(360deg)
+    }
+}
+@-moz-keyframes rotate {
+    from {
+        -moz-transform: rotate(0deg)
+    }
+    to {
+        -moz-transform: rotate(360deg)
+    }
+}
+.reality-clock-wrapper {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    opacity: 1;
+    z-index: 10
+}
+.reality-clock {
+    width: 40px;
+    height: 40px;
+    box-shadow: inset 0 0 0 2px #f0fcff;
+    border-radius: 25px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: .2
+}
+.level1-clock,
+.level2-clock,
+.level3-clock,
+.limbo-clock {
+    width: 40px;
+    height: 40px;
+    box-shadow: inset 0 0 0 2px #f0fcff;
+    border-radius: 25px;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    opacity: .2;
+    z-index: 10
+}
+.level1-clock .clock-hand {
+    -webkit-animation-duration: 4s;
+    -moz-animation-duration: 4s
+}
+.level2-clock .clock-hand {
+    -webkit-animation-duration: 12s;
+    -moz-animation-duration: 12s
+}
+.level3-clock .clock-hand {
+    -webkit-animation-duration: 30s;
+    -moz-animation-duration: 30s
+}
+.limbo-clock .clock-hand {
+    -webkit-animation-duration: 90s;
+    -moz-animation-duration: 90s
+}
+.level-name {
+    top: 44px;
+    z-index: 30;
+    opacity: .6;
+    width: 350px;
+    font-size: 18px
+  
+}
+.level-name .name span {
+    top: 7px;
+    z-index: 30;
+    opacity: 1;
+    width: 250px;
+    font-size: 18px;
+    left: 70px;
+}
+#level2 .level-name {
+    width: 200px
+}
+.level-name span {
+    font-size: 12px;
+    top: 30px;
+    opacity: .6;
+    text-align: left;
+    line-height: 18px;
+    left: 0
+}
+.level-name .name b {
+    opacity: 0;
+    float: left;
+    font-weight: normal
+}
+.logo-container {
+    position: fixed;
+    top: 150px;
+    left: 50%;
+    margin-left: -455px;
+    width: 910px;
+    height: 100px;
+    text-align: center;
+    z-index: 20
+}
+.logo {
+    width: 910px;
+    margin: 0 auto
+}
+.character-container,
+.browning-container {
+    top: 700px;
+    z-index: 9;
+    width: 120px;
+    height: 120px;
+    font-size: 18px;
+    letter-spacing: .07em
+}
+.character {
+    border-radius: 60px;
+    width: 120px;
+    height: 120px
+}
+.character span {
+    text-align: center;
+    width: 100px;
+    left: 8px;
+    top: 35px
+}
+.character span:last-child {
+    font-size: 11px;
+    top: 58px
+}
+.character-container.saito {
+    left: 0
+}
+.character-container.saito .character {
+    background: rgba(28, 169, 242, 0.7)
+}
+.level h4 span i.saito {
+    background: rgba(28, 169, 242, 0.5)
+}
+.character-container.cobb {
+    left: 140px
+}
+.character-container.cobb .character {
+    background: rgba(224, 34, 130, 0.7)
+}
+.level h4 span i.cobb,
+.level h3 span i.cobb {
+    background: rgba(224, 34, 130, 0.5)
+}
+.character-container.eames {
+    left: 280px
+}
+.character-container.eames .character,
+.overseer-container.eames .character {
+    background: rgba(240, 8, 67, 0.7)
+}
+.level h4 span i.eames {
+    background: rgba(240, 8, 67, 0.6)
+}
+.character-container.yusuf {
+    left: 420px
+}
+.character-container.yusuf .character,
+.overseer-container.yusuf .character {
+    background: rgba(139, 212, 42, 0.7)
+}
+.level h4 span i.yusuf {
+    background: rgba(139, 212, 42, 0.4)
+}
+.character-container.arthur {
+    left: 560px
+}
+.character-container.arthur .character,
+.overseer-container.arthur .character {
+    background: rgba(251, 100, 0, 0.7)
+}
+.level h4 span i.arthur {
+    background: rgba(251, 100, 0, 0.5)
+}
+.character-container.fischer {
+    left: 840px
+}
+.character-container.fischer .character {
+    background: rgba(42, 212, 178, 0.7)
+}
+.level h4 span i.fischer {
+    background: rgba(42, 212, 178, 0.4)
+}
+.character-container.ariadne {
+    left: 700px
+}
+.character-container.ariadne .character {
+    background: rgba(232, 219, 13, 0.7)
+}
+.level h4 span i.ariadne {
+    background: rgba(232, 219, 13, 0.4)
+}
+.character-container.air-hostess {
+    left: 840px
+}
+.character-container.air-hostess .character,
+.overseer-container.air-hostess .character {
+    background: rgba(204, 204, 204, 0.4)
+}
+.level h4 span i.air-hostess {
+    background: rgba(204, 204, 204, 0.3)
+}
+.browning-container {
+    font-size: 16px;
+    letter-spacing: 0
+}
+.browning-container .character {
+    background: rgba(68, 18, 0, 0.9);
+    opacity: 0
+}
+.level h4 span i.browning {
+    background: rgba(68, 18, 0, 0.5)
+}
+.character-container.mal .character {
+    background: rgba(146, 57, 227, 0.7)
+}
+.character-container.mal .character span {
+    letter-spacing: .05em
+}
+.level h4 span i.mal {
+    background: rgba(146, 57, 227, 0.5)
+}
+.character-container.mal .character .skull img {
+    top: 28px
+}
+#level3 .character-container.mal {
+    left: 630px;
+    margin-top: -160px
+}
+.overseer-container {
+    top: 240px;
+    left: 580px;
+    z-index: 30;
+    width: 80px;
+    height: 80px;
+    font-size: 13px;
+    letter-spacing: .07em;
+    line-height: 18px
+}
+.overseer-container .character {
+    border-radius: 40px;
+    width: 80px;
+    height: 80px
+}
+.overseer-container .character span {
+    text-align: center;
+    width: 70px;
+    left: 5px;
+    top: 22px
+}
+.overseer-container .character span:last-child {
+    top: 38px;
+    font-size: 9px
+}
+.overseer-container.air-hostess .character span:last-child {
+    top: 22px;
+    font-size: 11px;
+    line-height: 16px
+}
+#level1 .character-container.saito {
+    left: 70px
+}
+#level1 .character-container.cobb {
+    left: 210px
+}
+#level1 .character-container.eames {
+    left: 350px
+}
+#level1 .character-container.arthur {
+    left: 490px
+}
+#level1 .character-container.fischer {
+    left: 770px
+}
+#level1 .character-container.ariadne {
+    left: 630px
+}
+#level1 .overseer-container {
+    left: 650px
+}
+#level1 .character-container.eames .character .browning {
+    width: 0;
+    height: 0;
+    border-radius: 60px;
+    background: rgba(68, 18, 0, 0.9);
+    z-index: 30;
+    font-size: 12px;
+    line-height: 20px;
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    bottom: 60px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+#level1 .character-container.eames .character .browning span {
+    position: absolute;
+    width: 100px;
+    left: 10px;
+    top: 40px;
+    opacity: 0
+}
+.character-container .character .shot {
+    width: 0;
+    height: 0;
+    border-radius: 25px;
+    background: rgba(255, 6, 0, 0.8);
+    z-index: 30;
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    bottom: 35px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+#level2 .saito .character .shot {
+    width: 50px;
+    height: 50px
+}
+.character-container .character .skull {
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 40;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /opacity: 0
+}
+.character-container .character .skull img {
+    left: 40px;
+    top: 18px
+}
+.character-container .character .skull span {
+    top: 68px
+}
+#level2 .character-container.saito {
+    left: 260px
+}
+#level2 .character-container.cobb {
+    left: 380px
+}
+#level2 .character-container.eames {
+    left: 490px
+}
+#level2 .character-container.fischer {
+    left: 620px
+}
+#level2 .character-container.ariadne {
+    left: 600px
+}
+#level2 .browning-container {
+    left: 350px;
+    top: 300px
+}
+#level2 .overseer-container {
+    left: 580px
+}
+#level3 .character-container.saito {
+    left: 210px
+}
+#level3 .character-container.cobb {
+    left: 350px
+}
+#level3 .character-container.fischer {
+    left: 630px
+}
+#level3 .character-container.ariadne {
+    left: 490px
+}
+#level3 .overseer-container {
+    left: 370px
+}
+#limbo .character-container.saito {
+    left: 280px;
+    top: 460px
+}
+#limbo .character-container.fischer {
+    top: 460px;
+    left: 200px
+}
+#level2 .character-container.saito .skull {
+    opacity: 0
+}
+#limbo .character-container.fischer .shot {
+    display: none
+}
+#limbo .character-container.fischer .skull {
+    opacity: 0
+}
+#limbo .character-container.ariadne .skull {
+    background: rgba(0, 0, 0, 0.8)
+}
+#limbo .character-container.mal {
+    top: 460px;
+    left: 350px
+}
+#limbo .character-container.cobb {
+    left: 500px
+}
+#limbo .character-container.ariadne {
+    left: 650px;
+    top: 460px;
+}
+.character span {
+    opacity: 1
+}
+.character .zzz-container {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    top: 0;
+    left: 0;
+    border-radius: 60px;
+    opacity: 0;
+    z-index: 1
+}
+.character .zzz-container .zzz {
+    right: 0;
+    top: 0;
+    right: -20px;
+    top: -5px;
+    width: 80px;
+    height: 80px
+}
+.character .zzz b {
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 18px;
+    bottom: 20px;
+    top: auto;
+    font-size: 20px;
+    opacity: .7;
+    font-weight: 400
+}
+.character .zzz b:first-child {
+    left: 0;
+    bottom: 0
+}
+.character .zzz b:last-child {
+    left: 42px;
+    bottom: 40px
+}
+.character-container.saito .character .zzz-container {
+    background: #2288bc
+}
+.character-container.cobb .character .zzz-container {
+    background: #ab2b70
+}
+.character-container.eames .character .zzz-container {
+    background: #b71a44
+}
+.character-container.yusuf .character .zzz-container {
+    background: #73aa34
+}
+.character-container.arthur .character .zzz-container {
+    background: #c05b17
+}
+.character-container.fischer .character .zzz-container {
+    background: #2aa790
+}
+.character-container.ariadne .character .zzz-container {
+    background: #d0c714
+}
+@-webkit-keyframes zzz1 {
+    0% {
+        bottom: 0;
+        opacity: 0;
+        font-size: 12px
+    }
+    25% {
+        opacity: .7
+    }
+    80% {
+        bottom: 15px;
+        font-size: 25px;
+        opacity: 0
+    }
+    100% {
+        bottom: 0;
+        opacity: 0
+    }
+}
+.character .zzz b:first-child {
+    -webkit-animation: zzz1 3s infinite
+}
+@-webkit-keyframes zzz2 {
+    0% {
+        opacity: 0
+    }
+    10% {
+        bottom: 15px;
+        opacity: 0;
+        font-size: 18px
+    }
+    40% {
+        opacity: .7
+    }
+    90% {
+        bottom: 40px;
+        font-size: 35px;
+        opacity: 0
+    }
+    100% {
+        bottom: 0;
+        opacity: 0
+    }
+}
+.character .zzz b {
+    -webkit-animation: zzz2 3s infinite
+}
+@-webkit-keyframes zzz3 {
+    0% {
+        opacity: 0
+    }
+    15% {
+        bottom: 30px;
+        opacity: 0;
+        font-size: 20px
+    }
+    50% {
+        opacity: .7
+    }
+    100% {
+        bottom: 70px;
+        font-size: 45px;
+        opacity: 0
+    }
+}
+.character .zzz b:last-child {
+    -webkit-animation: zzz3 3s infinite
+}
+.wires-container {
+    width: 850px;
+    height: 80px;
+    top: 400px;
+    left: 55px
+}
+.wires-container .wires {
+    width: 850px;
+    height: 80px;
+    background: url(wires.png) top left no-repeat;
+    opacity: 0
+}
+#level1 .wires-container .wires {
+    background: url(wires.png) 0 -80px no-repeat
+}
+#level2 .wires-container .wires {
+    background: url(wires.png) 0 -160px no-repeat
+}
+#level3 .wires-container .wires {
+    background: url(wires.png) 0 -240px no-repeat
+}
+.down-arrow {
+    width: 120px;
+    height: 100px;
+    top: 500px;
+    left: 420px;
+    opacity: .5;
+    font-size: 16px;
+    line-height: 28px
+}
+.down-arrow img {
+    position: absolute;
+    bottom: 0;
+    left: 47px
+}
+h3.intro {
+    width: 800px;
+    top: 300px;
+    left: 80px;
+    z-index: 10
+}
+.share-container {
+    width: 100%;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 30;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: .5;
+}
+.share {
+    margin: 0 auto;
+    width: 500px;
+    height: 25px
+}
+.share-container:hover {
+    opacity: 1
+}
+.share .share-title {
+    margin-right: 20px;
+    line-height: 25px;
+    float: left;
+    font-size: 16px
+}
+.share-buttons {
+    float: left;
+    height: 25px
+}
+.fb_edge_widget_with_comment span.fb_edge_comment_widget {
+    top: -200px!important
+}
+h3.h35 a {
+    position: relative
+}
+h3.h35 {
+    line-height: 50px
+}
+h3.h37 img.share-arrow {
+    left: 417px;
+    top: 60px
+}
+a,
+a:visited {
+    color: rgba(131, 214, 255, 0.75);
+    text-decoration: none;
+    padding-bottom: 1px;
+    box-shadow: inset 0 -2px 0 0 rgba(131, 214, 255, 0.5)
+}
+a:hover {
+    color: rgba(131, 214, 255, 1);
+    box-shadow: inset 0 -2px 0 0 rgba(131, 214, 255, 0.75)
+}
+.buy {
+    line-height: 25px;
+    float: left;
+    font-size: 14px;
+    position: absolute;
+    top: 9px;
+    right: 20px
+}
+.buy a,
+.buy a:visited {
+    box-shadow: inset 0 -1px 0 0 rgba(131, 214, 255, 0.3)
+}
+.buy a:hover {
+    box-shadow: inset 0 -1px 0 0 rgba(131, 214, 255, 0.6)
+}
